@@ -1,0 +1,29 @@
+header{
+  height: 180px;
+}
+
+body {
+  background-color: $primary-color-variation;
+  overflow-x: hidden;
+  color: $light-color;
+}
+h1 {
+  line-height: 60px;
+  font-size: 70px;
+  font-weight: bold;
+  @include mobile {
+    font-size: 46px;
+    line-height: 40px;
+  }
+}
+
+p {
+  margin-top: 30px;
+  font-size: 20px;
+  @include mobile {
+    font-size: 14px
+  }
+}
+button {
+  @include button;
+}

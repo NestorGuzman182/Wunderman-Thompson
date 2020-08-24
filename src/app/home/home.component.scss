@@ -1,0 +1,148 @@
+@import "../../styles.scss";
+
+
+.image-background {
+  position: absolute;
+  top: -100vh;
+  left: 5%;
+  z-index: -1;
+  @include mobile {
+    left: -200%;
+    top: -120vh;
+  }
+}
+.hero {
+  margin: auto;
+  width: 100%;
+}
+main {
+  max-width: 530px;
+  margin: 100px auto;
+  text-align: center;
+  align-content: center;
+  @include mobile {
+    p {
+      max-width: 254px;
+      margin:30px auto;
+    }
+  }
+}
+
+.explore {
+  width: 100px;
+  margin: 50px auto;
+}
+
+.component-container-1 {
+  @include layoutComponent(70vw, -70px)
+}
+
+.section {
+  display: flex;
+  margin: auto;
+  margin-top: -80px;
+  @include mobile {
+    flex-direction: column;
+    img {
+      margin: 60px;
+    }
+  }
+}
+.variation-sec{
+  @include mobile {
+    flex-direction: column-reverse;
+    img{
+      margin: 60px -60px;
+    }
+  }
+}
+
+.container-info {
+  margin: auto;
+  p {
+    width: 414px;
+    @include mobile {
+      width: 254px;
+      margin: 20px auto;
+    }
+  }
+}
+.image-container{
+  box-sizing: content-box;
+  img{
+    width:100%;
+    height: auto;
+    @include mobile {
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+    }
+  }
+}
+.container-info.right{
+  text-align: right;
+  margin-right: 50px;
+}
+
+.component-container-2{
+  @include layoutComponent(25vw, -30px);
+}
+.section-2{
+  background-color: $secondary-color;
+  @include SectionInfo;
+  .container-marks {
+  p {
+      margin-top: 0;
+    }
+  }
+
+}
+
+.component-container-3 {
+  @include layoutComponent(65vw, 30px);
+}
+.component-container-4 {
+  @include layoutComponent(-5vw, -220px);
+}
+.container-use-dashboard {
+  margin: auto;
+}
+.section-3 {
+  @include SectionInfo;
+  margin-top: -240px;
+  p {
+    max-width: 300px;
+    margin: auto;
+  }
+  h4 {
+    max-width: 500px;
+    margin: auto;
+    @include mobile {
+      width: 340px;
+    }
+  }
+}
+
+.component-container-5 {
+  @include layoutComponent(75vw, -80px)
+}
+.section-4 {
+  @include SectionInfo;
+  margin-top: -150px;
+  h1 {
+    margin: 50px;
+  }
+  p {
+    width: 540px;
+    margin: auto;
+    @include mobile {
+      width: 250px;
+    }
+  .button.large {
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+}
+}

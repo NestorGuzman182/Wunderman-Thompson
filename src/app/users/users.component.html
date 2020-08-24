@@ -1,0 +1,17 @@
+
+<header></header>
+<section class="container">
+  <h1>¿Cómo esto ayuda a las marcas?</h1>
+  <p>Estos son los usuarios obtenidos de la API:</p>
+  <div class="container-users">
+    <div class="row pb-4">
+      <div class="col-md-4 sm-1 mt-3" *ngFor="let user of users">
+        <img src="{{user.avatar}}" alt="">
+        <h4>{{user.first_name +' '+ user.last_name }} </h4>
+        <p>{{user.email}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="nav-container">
+    <picture class="brand__logo-container">
+      <img src="assets/images/LOGO WT.png" alt="logo" class="brand-logo">
+      <img src="assets/images/LOGO WTO.png" alt="logo alt" class="brand-logo-alt">
+    </picture>
+    <div class="menu-container">
+      <a id="menu-button" (click)="showHide()">
+        <i class="fas fa-bars open" ></i>
+        <i class="far fa-times-circle close"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="menu">
+  <ul>
+    <li><a routerLink="" (click)="showHide()">Dashboard</a></li>
+    <li><a href="home/#que-es">¿Que es?</a></li>
+    <li><a href="home/#porque">¿Por que?</a></li>
+    <li><a routerLink="/users" (click)="showHide()">¿Como ayuda a las marcas?</a></li>
+    <li><a href="home/#comoseusa"> ¿Como se usa?</a></li>
+    <li><a routerLink="/aboutme" (click)="showHide()">Acerca De Mi!</a></li>
+  </ul>
+</nav>
